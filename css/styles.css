@@ -26,6 +26,21 @@ color:#2196F3;
 {
     color: #2196F3;
 }
+.features-title {
+    color: #212121;
+}
+.features-description {
+    color: #757575;
+}
+.hero-title {
+    color: #fff;
+}
+.hero {
+    background-color: #2F303A;
+}
+.example-title, .team-title {
+  color: #212121;
+}
 
 /*
  #212121 цвет основного текста  
