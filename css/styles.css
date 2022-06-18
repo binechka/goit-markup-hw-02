@@ -17,6 +17,16 @@ body {
 .site-nav .link:focus {
 color:#2196F3;
 }
+ .address .link {
+    color: #757575;
+ }
+
+.address .link:hover,
+.address .link:focus
+{
+    color: #2196F3;
+}
+
 /*
  #212121 цвет основного текста  
 #757575 параграфы
