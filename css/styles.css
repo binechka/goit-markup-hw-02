@@ -2,6 +2,14 @@ body {
     background-color: #fff;
     color: #757575;
 }
+
+.logo {
+    color: #2196F3;
+}
+.list {
+    list-style: none;
+}
+
 /*
  #212121 цвет основного текста  
 #757575 параграфы
