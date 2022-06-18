@@ -13,7 +13,8 @@ body {
 .site-nav .link {
     color: #212121;
 }
-.site-nav .link:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
 color:#2196F3;
 }
 /*
