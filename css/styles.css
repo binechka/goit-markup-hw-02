@@ -9,7 +9,13 @@ body {
 .list {
     list-style: none;
 }
-
+/* Site nav */
+.site-nav .link {
+    color: #212121;
+}
+.site-nav .link:hover {
+color:#2196F3;
+}
 /*
  #212121 цвет основного текста  
 #757575 параграфы
