@@ -1,50 +1,235 @@
-body {
-    background-color: #fff;
-    color: #212121;
-}
-
-.logo {
-    color: #2196F3;
-}
-.list {
-    list-style: none;
-}
-/* Site nav */
-.site-nav .link {
-    color: #212121;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-color:#2196F3;
-}
- .address .link {
-    color: #757575;
- }
-
-.address .link:hover,
-.address .link:focus
-{
-    color: #2196F3;
-}
-.features-title {
-    color: #212121;
-}
-.features-description {
-    color: #757575;
-}
-.hero-title {
-    color: #fff;
-}
-.hero {
-    background-color: #2F303A;
-}
-.example-title, .team-title {
-  color: #212121;
-}
-
 /*
  #212121 цвет основного текста  
 #757575 параграфы
 #FFFFFF заголовок
 #212121 основной 
 rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #fff;
+}
+
+
+body {
+    background-color: #fff;
+    color: #212121;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+ h1,h2,h3,h4,h5,h6 {
+    font-family: Roboto, sans-serif;
+ }
+.header .logo {
+    color:#000000;
+    font-family: Raleway, sans-serif;   
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.color {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+/* Site nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+color:var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.ste-nav.list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+ .contact .link {
+    color:var(--primary-text-color);
+ }
+
+.contact .link:hover,
+.contact .link:focus
+{
+    color: var(--accent-color);
+}
+.link .contact .footer {
+    color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        /* or 171% */
+    
+        letter-spacing: 0.03em;
+}
+
+.hero-title {
+    color: #fff;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        /* or 136% */
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+
+.hero {
+    background-color: #2F303A;
+}
+.features .title,
+.team .title {
+    color:var(--title-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+
+.example .title {
+color: var(--title-text-color);
+}
+.features .description {
+    color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        /* or 171% */
+        letter-spacing: 0.03em;
+}
+
+.team .name {
+    color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        /* identical to box height */
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.team .description {
+    color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        /* identical to box height */
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.address .link {
+    color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+    
+        letter-spacing: 0.03em;
+}
+
+.address .link:focus,
+.address .link:hover {
+    color: var(--accent-color);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+.footer .logo {
+    color: #fff;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        /* identical to box height */
+    
+        letter-spacing: 0.03em;
+}
+
+/* button */
+.button {
+background-color: #F5F4FA;
+color: var(--title-text-color);
+}
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 188% */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+}
+
+.projects {
+    background-color: #fff;
+}
+
+.projects .title {
+color: var(--title-text-color)
+}
+.projects.list .title {
+    color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        /* identical to box height, or 200% */
+    
+        letter-spacing: 0.06em;
+}
+.projects .description {
+color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+}
+.filters .title {
+    color: var(--title-text-color);
+}
+ .button.secondary {
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2.16;
+        /* identical to box height, or 162% */
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+ }
+
+ .button.list {
+    background-color: #fff;
+ }
+
+ .button.secondary:hover,
+ .button.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color)
+ }
+
+ .button.primary:hover,
+ .button.primary:focus {
+    background-color: #F5F4FA;
+    color: var(--title-text-color)
+ }
