@@ -30,6 +30,8 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
+
 .color {
     color: var(--accent-color);
 }
@@ -163,6 +165,7 @@ color: var(--title-text-color);
 .button {
 background-color: #F5F4FA;
 color: var(--title-text-color);
+cursor: pointer;
 }
 .button.primary {
     background-color: var(--accent-color);
